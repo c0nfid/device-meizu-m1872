@@ -107,7 +107,7 @@ Return<void> FingerprintInscreen::onPress() {
     set(BOOST_ENABLE_PATH, 1);
     set(HBM_ENABLE_PATH, 1);
     std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(168));
+        std::this_thread::sleep_for(std::chrono::milliseconds(150));
         if (mFingerPressed) {
             notifyHal(NOTIFY_FINGER_DETECTED, 0);
         }
@@ -147,7 +147,7 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
     int brightness = get(BRIGHTNESS_PATH, 0);
     float alpha = 1.0 - pow(brightness / 1023.0f, 0.455);
-    float min = (float) property_get_int32("fod.dimming.min", 50);
+    float min = (float) property_get_int32("fod.dimming.min", 0);
     float max = (float) property_get_int32("fod.dimming.max", 255);
     return min + (max - min) * alpha;
 }
