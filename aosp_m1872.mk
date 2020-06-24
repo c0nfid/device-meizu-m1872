@@ -24,7 +24,9 @@ $(call inherit-product, device/meizu/m1872/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
 
 PRODUCT_NAME := aosp_m1872
 PRODUCT_BRAND := Meizu
@@ -46,6 +48,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
     fod.dimming.max=255
 
-# Add FOD support
-	TARGET_HAS_FOD := true
+# Add FOD support crDroid needs
+#	TARGET_HAS_FOD := true
 
