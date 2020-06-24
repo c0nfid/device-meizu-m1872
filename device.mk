@@ -12,8 +12,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Device uses high-density artwork where available
- PRODUCT_AAPT_CONFIG := normal
- PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+# PRODUCT_AAPT_CONFIG := normal
+# PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
