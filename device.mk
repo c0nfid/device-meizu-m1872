@@ -12,8 +12,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+ PRODUCT_AAPT_CONFIG := normal
+ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -27,8 +27,8 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Audio
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
+  PRODUCT_COPY_FILES += \
+  $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Charger
 PRODUCT_COPY_FILES += \
