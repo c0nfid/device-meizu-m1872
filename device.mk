@@ -19,8 +19,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Permissions
-PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+# PRODUCT_COPY_FILES += \
+ #   vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
