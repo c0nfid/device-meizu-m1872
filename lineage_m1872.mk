@@ -44,7 +44,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=400
 
  PRODUCT_PRODUCT_PROPERTIES += \
-    fod.dimming.min=40 \
+    fod.dimming.min=10 \
     fod.dimming.max=255
 
 # Add FOD support
