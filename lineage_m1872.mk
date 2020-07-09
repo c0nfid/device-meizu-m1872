@@ -26,7 +26,6 @@ $(call inherit-product, device/meizu/m1872/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 
-
 PRODUCT_NAME := lineage_m1872
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1872
@@ -46,7 +45,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
  PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
     fod.dimming.max=255
-
-# Add FOD support
-	TARGET_HAS_FOD := true
 
