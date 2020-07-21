@@ -46,3 +46,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     fod.dimming.min=40 \
     fod.dimming.max=255
 
+
+# Inherit some common Sakura stuff.
+SAKURA_OFFICIAL := true
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_GAPPS=true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
