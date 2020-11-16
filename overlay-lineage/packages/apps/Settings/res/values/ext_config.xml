@@ -29,4 +29,12 @@
     <dimen name="fingerprint_dot_radius">12dp</dimen>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">80%</item>
 
+    <!-- For Enabling Battery Heath -->
+    <bool name="config_supportBatteryHealth">true</bool>
+
+    <!-- If device supports battery health options -->
+    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
+
 </resources>
