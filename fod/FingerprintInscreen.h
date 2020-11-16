@@ -12,6 +12,7 @@
 #include <vendor/lineage/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 #include <vendor/synaptics/fingerprint/interfaces/extensions/1.0/ISteller.h>
 #include <vendor/synaptics/fingerprint/interfaces/extensions/1.0/IStellerClientCallback.h>
+#include <vendor/goodix/hardware/biometrics/fingerprint/2.1/IGoodixFingerprintDaemon.h>
 
 namespace vendor {
 namespace lineage {
@@ -28,6 +29,7 @@ using ::android::hardware::hidl_vec;
 
 using ::vendor::synaptics::fingerprint::interfaces::extensions::V1_0::ISteller;
 using ::vendor::synaptics::fingerprint::interfaces::extensions::V1_0::IStellerClientCallback;
+using ::vendor::goodix::hardware::biometrics::fingerprint::V2_1::IGoodixFingerprintDaemon;
 
 class FingerprintInscreen : public IFingerprintInscreen {
   public:
@@ -58,6 +60,8 @@ class FingerprintInscreen : public IFingerprintInscreen {
 
     bool mFingerPressed;
     bool mIconShown;
+
+    std::string mFODModel;
 
     void notifyKeyEvent(int value);
     void notifyHal(int32_t status, int32_t data);
